@@ -38,7 +38,12 @@ export default function RootLayout({
 				/>
 				<link rel="manifest" href="/site.webmanifest" />
 			</head>
-			<body className={cn(SpaceGrotesk.className, "bg-dark text-light")}>
+			<body
+				className={cn(
+					SpaceGrotesk.className,
+					"bg-dark text-light min-h-screen",
+				)}
+			>
 				<Navbar />
 				<div className="mt-32 px-5 md:px-[80px]">{children}</div>
 			</body>
