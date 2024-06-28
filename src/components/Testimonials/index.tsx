@@ -3,7 +3,10 @@ import Testimonial from "./Testimonial";
 
 const Testimonials = () => {
 	return (
-		<div className="max-w-screen-xl mx-auto mt-20 md:mt-40">
+		<div
+			className="max-w-screen-xl mx-auto mt-20 md:mt-40"
+			id="testimonials"
+		>
 			<div className="h-1 w-28 bg-primary rounded-xl mb-5" />
 			<h1>What My Clients Say</h1>
 			<div className="flex flex-wrap gap-8 items-center mt-14">

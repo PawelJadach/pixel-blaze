@@ -2,9 +2,9 @@ import React from "react";
 
 const Process = () => {
 	return (
-		<div className="max-w-screen-xl mx-auto mt-20 md:mt-40">
+		<div className="max-w-screen-xl mx-auto mt-20 md:mt-40" id="process">
 			<div className="h-1 w-28 bg-primary rounded-xl mb-5" />
-			<h1>What My Clients Say</h1>
+			<h1>Trust the process</h1>
 			<div className="flex flex-col md:flex-row gap-8 items-center text-center md:text-left justify-between mt-14">
 				<div className="max-w-[250px] space-y-2">
 					<h3>

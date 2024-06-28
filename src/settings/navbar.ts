@@ -18,6 +18,10 @@ export const navLinks: NavLinkProps[] = [
 		label: "Testimonials",
 	},
 	{
+		href: "/#process",
+		label: "Process",
+	},
+	{
 		href: "#contact",
 		label: "Contact",
 		filled: true,

@@ -9,7 +9,10 @@ import {
 
 const Services = () => {
 	return (
-		<div className="max-w-screen-xl mx-auto flex justify-between items-center md:items-start flex-col md:flex-row gap-12 mt-20 md:mt-40">
+		<div
+			className="max-w-screen-xl mx-auto flex justify-between items-center md:items-start flex-col md:flex-row gap-12 mt-20 md:mt-40"
+			id="services"
+		>
 			<Service
 				header="Development"
 				text="Crafting robust and scalable digital solutions tailored to

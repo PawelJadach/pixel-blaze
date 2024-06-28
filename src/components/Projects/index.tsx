@@ -3,7 +3,10 @@ import Project from "./Project";
 
 const Projects = () => {
 	return (
-		<div className="max-w-screen-xl mx-auto flex items-center justify-center flex-col md:flex-row gap-8 mt-20 md:mt-40 flex-wrap">
+		<div
+			className="max-w-screen-xl mx-auto flex items-center justify-center flex-col md:flex-row gap-8 mt-20 md:mt-40 flex-wrap"
+			id="projects"
+		>
 			<Project
 				src="/project.png"
 				alt="Project name"
