@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import Process from "@/components/Process";
 import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
@@ -10,6 +11,7 @@ export default function Home() {
 			<Services />
 			<Projects />
 			<Testimonials />
+			<Process />
 		</>
 	);
 }
