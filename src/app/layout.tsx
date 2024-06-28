@@ -45,7 +45,7 @@ export default function RootLayout({
 				)}
 			>
 				<Navbar />
-				<div className="mt-32 px-5 md:px-[80px]">{children}</div>
+				<div className="mt-32 px-10 md:px-[80px] pb-32">{children}</div>
 			</body>
 		</html>
 	);
