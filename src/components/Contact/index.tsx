@@ -10,11 +10,6 @@ const Contact = () => {
 			<div>
 				<div className="h-1 w-28 bg-primary rounded-xl mb-5" />
 				<h1>Contact with me</h1>
-				<ul className="list-disc space-y-2 ml-4 mt-6">
-					<li>I will analyze your brief</li>
-					<li>I will prepare a proposal</li>
-					<li>I will start working</li>
-				</ul>
 			</div>
 			<Form />
 		</div>

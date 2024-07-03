@@ -8,7 +8,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 const Form = () => {
-	const [status, setStatus] = useState<"SUCCESS" | "ERROR" | null>("SUCCESS");
+	const [status, setStatus] = useState<"SUCCESS" | "ERROR" | null>(null);
 	const {
 		register,
 		handleSubmit,
