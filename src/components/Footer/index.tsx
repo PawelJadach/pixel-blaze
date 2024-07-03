@@ -3,10 +3,7 @@ import React from "react";
 
 const Footer = () => {
 	return (
-		<div
-			className="max-w-screen-xl mx-auto mt-20 md:mt-40 flex flex-col md:flex-row gap-6 items-center justify-between py-6"
-			id="process"
-		>
+		<div className="max-w-screen-xl mx-auto mt-20 md:mt-40 flex flex-col md:flex-row gap-6 items-center justify-between py-6">
 			<div className="flex gap-4 text-sm">
 				<Link href="#services">Services</Link>
 				<Link href="#projects">Projects</Link>
