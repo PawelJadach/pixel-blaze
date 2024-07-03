@@ -4,7 +4,10 @@ import React from "react";
 
 const Hero = () => {
 	return (
-		<div className="max-w-screen-xl mx-auto flex justify-between items-center flex-col md:flex-row gap-12">
+		<div
+			className="max-w-screen-xl mx-auto flex justify-between items-center flex-col md:flex-row gap-12"
+			id="hero"
+		>
 			<div className="flex flex-col gap-8 max-w-lg">
 				<h1 className="text-balance">
 					Custom Websites Crafted Just for{" "}

@@ -18,7 +18,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className="scroll-smooth scroll-pt-24">
+		<html lang="en" className="scroll-smooth scroll-pt-32">
 			<head>
 				<link
 					rel="apple-touch-icon"

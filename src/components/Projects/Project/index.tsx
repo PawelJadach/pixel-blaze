@@ -1,12 +1,9 @@
+import { Project as ProjectType } from "@/utils/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-type ProjectProps = {
-	src: string;
-	alt: string;
-	href: string;
-};
+type ProjectProps = ProjectType;
 
 const Project = ({ src, alt, href }: ProjectProps) => {
 	return (

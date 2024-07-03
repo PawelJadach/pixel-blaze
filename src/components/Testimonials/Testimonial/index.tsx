@@ -1,9 +1,7 @@
+import { Testimonial as TestimonialType } from "@/utils/data";
 import React from "react";
 
-type TestimonialProp = {
-	text: string;
-	author: string;
-};
+type TestimonialProp = TestimonialType;
 
 const Testimonial = ({ text, author }: TestimonialProp) => {
 	return (

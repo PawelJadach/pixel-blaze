@@ -1,22 +1,31 @@
 import { NavLinkProps } from "@/components/Navbar/NavLink";
+import { projects, testimonials } from "@/utils/data";
 
 export const navLinks: NavLinkProps[] = [
 	{
-		href: "#",
+		href: "#hero",
 		label: "Home",
 	},
 	{
 		href: "#services",
 		label: "Services",
 	},
-	{
-		href: "#projects",
-		label: "Projects",
-	},
-	{
-		href: "#testimonials",
-		label: "Testimonials",
-	},
+	...(projects.length > 0
+		? [
+				{
+					href: "#projects",
+					label: "Projects",
+				},
+		  ]
+		: []),
+	...(testimonials.length > 0
+		? [
+				{
+					href: "#testimonials",
+					label: "Testimonials",
+				},
+		  ]
+		: []),
 	{
 		href: "/#process",
 		label: "Process",
