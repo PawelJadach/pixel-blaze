@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { getLocale, getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
+import { Analytics } from "@vercel/analytics/react";
 
 const SpaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -55,6 +56,7 @@ export default async function RootLayout({
 					<Navbar />
 					<div className="mt-32 px-10 md:px-[80px]">{children}</div>
 					<Footer />
+					<Analytics />
 				</NextIntlClientProvider>
 			</body>
 		</html>
