@@ -7,6 +7,7 @@ import { Squash as Hamburger } from "hamburger-react";
 import NavLogo from "./NavLogo";
 import { navLinks } from "@/settings/navbar";
 import NavLink from "./NavLink";
+import LocaleSwitcher from "../ui/LocaleSwitcher";
 
 export const NavMobile = () => {
 	const [isOpen, setOpen] = useState(false);
@@ -67,7 +68,9 @@ export const NavMobile = () => {
 									damping: 20,
 									delay: 0.1 + navLinks.length / 10,
 								}}
-							></motion.li>
+							>
+								<LocaleSwitcher />
+							</motion.li>
 						</ul>
 					</motion.div>
 				)}
