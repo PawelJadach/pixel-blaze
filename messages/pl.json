@@ -1,0 +1,68 @@
+{
+  "Hero": {
+    "Header": {
+      "Title": "Strony internetowe stworzone specjalnie dla",
+      "You": "Ciebie"
+    },
+    "Text": "Od koncepcji do uruchomienia, ożywiamy Twoją unikalną wizję za pomocą dopasowanych rozwiązań internetowych, wyjątkowego designu i bezproblemowej funkcjonalności, zapewniając, że Twoja marka wyróżnia się na cyfrowym krajobrazie.",
+    "Button": "Skontaktuj się z nami",
+    "Image": "Kobieta z laptopem"
+  },
+  "Navbar": {
+    "Home": "Strona główna",
+    "Services": "Usługi",
+    "Projects": "Projekty",
+    "Testimonials": "Referencje",
+    "Process": "Proces",
+    "Contact": "Kontakt"
+  },
+  "Contact": {
+    "Header": "Skontaktuj się ze mną",
+    "Form": {
+      "Name": "Imię",
+      "Email": "Email",
+      "Message": "Wiadomość",
+      "Button": "Wyślij wiadomość",
+      "Success": "Wiadomość wysłana pomyślnie!",
+      "Error": "Coś poszło nie tak. Spróbuj ponownie później."
+    }
+  },
+  "Footer": {
+    "Text": "© 2024 Prawa autorskie. Wszelkie prawa zastrzeżone."
+  },
+  "Process": {
+    "Header": "Zaufaj procesowi",
+    "Steps": {
+      "1": {
+        "Title": "Planowanie",
+        "Text": "Dopasowujemy strategie do celów klienta i przeprowadzamy obszerne badania"
+      },
+      "2": {
+        "Title": "Projektowanie",
+        "Text": "Bezproblemowo łączymy elegancję z funkcjonalnością i doświadczeniem użytkownika"
+      },
+      "3": {
+        "Title": "Kodowanie",
+        "Text": "Przekształcamy pomysły w namacalne, wysokiej jakości produkty"
+      }
+    }
+  },
+  "Services": {
+    "Development": {
+      "Header": "Kodowanie",
+      "Text": "Tworzenie solidnych i skalowalnych rozwiązań cyfrowych dostosowanych do unikalnych potrzeb Twojego biznesu."
+    },
+    "Design": {
+      "Header": "Projektowanie",
+      "Text": "Tworzenie wizualnie oszałamiających projektów, które przyciągają i angażują Twoją publiczność."
+    },
+    "Copywriting": {
+      "Header": "Copywriting",
+      "Text": "Tworzenie treści, które przyciągają uwagę i przekonują do działania."
+    },
+    "Branding": {
+      "Header": "Branding",
+      "Text": "Budowanie spójnej i rozpoznawalnej marki, która wyróżnia się na rynku."
+    }
+  }
+}

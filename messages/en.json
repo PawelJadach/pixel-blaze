@@ -1,0 +1,68 @@
+{
+  "Hero": {
+    "Header": {
+      "Title": "Custom Websites Crafted Just for",
+      "You": "You"
+    },
+    "Text": "From concept to launch, we bring your unique vision to life with tailored web solutions, exceptional design, and seamless functionality, ensuring your brand stands out in the digital landscape.",
+    "Button": "Contact with us",
+    "Image": "Woman with Laptop"
+  },
+  "Navbar": {
+    "Home": "Home",
+    "Services": "Services",
+    "Projects": "Projects",
+    "Testimonials": "Testimonials",
+    "Process": "Process",
+    "Contact": "Contact"
+  },
+  "Contact": {
+    "Header": "Contact with me",
+    "Form": {
+      "Name": "Name",
+      "Email": "Email",
+      "Message": "Message",
+      "Button": "Send message",
+      "Success": "Message sent successfully!",
+      "Error": "Something went wrong. Please try again later."
+    }
+  },
+  "Footer": {
+    "Text": "© 2024 Copyright. All rights reserved."
+  },
+  "Process": {
+    "Header": "Trust the process",
+    "Steps": {
+      "1": {
+        "Title": "Planning",
+        "Text": "We align strategies with client goals and conduct extensive research"
+      },
+      "2": {
+        "Title": "Design",
+        "Text": "We seamlessly blend elegance with functionality and user experience"
+      },
+      "3": {
+        "Title": "Code",
+        "Text": "We transform ideas into tangible, high quality products"
+      }
+    }
+  },
+  "Services": {
+    "Development": {
+      "Header": "Development",
+      "Text": "Crafting robust and scalable digital solutions tailored to your unique business needs."
+    },
+    "Design": {
+      "Header": "Design",
+      "Text": "Creating visually stunning designs that captivate and engage your audience."
+    },
+    "Copywriting": {
+      "Header": "Pisanie treści",
+      "Text": "Writing compelling and persuasive content that drives action and connects with your audience."
+    },
+    "Branding": {
+      "Header": "Branding",
+      "Text": "Building a distinctive and memorable brand identity that sets you apart from the competition."
+    }
+  }
+}

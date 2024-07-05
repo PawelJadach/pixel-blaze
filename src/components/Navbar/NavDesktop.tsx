@@ -2,6 +2,7 @@ import React from "react";
 import NavLink from "./NavLink";
 import NavLogo from "./NavLogo";
 import { navLinks } from "@/settings/navbar";
+import LocaleSwitcher from "../ui/LocaleSwitcher";
 
 export default function NavDesktop() {
 	return (
@@ -10,8 +11,9 @@ export default function NavDesktop() {
 				<NavLogo />
 				<div className="flex gap-8 items-center">
 					{navLinks.map((link) => (
-						<NavLink key={link.label} {...link} />
+						<NavLink key={link.labelKey} {...link} />
 					))}
+					<LocaleSwitcher />
 				</div>
 			</div>
 		</div>

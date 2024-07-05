@@ -6,32 +6,34 @@ import {
 	DesignIcon,
 	DevelopmentIcon,
 } from "./Icons";
+import { useTranslations } from "next-intl";
 
 const Services = () => {
+	const t = useTranslations("Services");
+
 	return (
 		<div
 			className="max-w-screen-xl mx-auto flex justify-between items-center md:items-start flex-col md:flex-row gap-12 mt-20 md:mt-40"
 			id="services"
 		>
 			<Service
-				header="Development"
-				text="Crafting robust and scalable digital solutions tailored to
-					your unique business needs."
+				header={t("Development.Header")}
+				text={t("Development.Text")}
 				icon={<DevelopmentIcon />}
 			/>
 			<Service
-				header="Design"
-				text="Creating visually stunning and user-friendly designs that captivate and engage your audience."
+				header={t("Design.Header")}
+				text={t("Design.Text")}
 				icon={<DesignIcon />}
 			/>
 			<Service
-				header="Copywriting"
-				text="Writing compelling and persuasive content that drives action and connects with your audience."
+				header={t("Copywriting.Header")}
+				text={t("Copywriting.Text")}
 				icon={<CopywritingIcon />}
 			/>
 			<Service
-				header="Branding"
-				text="Building a distinctive and memorable brand identity that sets you apart from the competition."
+				header={t("Branding.Header")}
+				text={t("Branding.Text")}
 				icon={<BrandingIcon />}
 			/>
 		</div>

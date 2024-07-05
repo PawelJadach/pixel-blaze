@@ -4,17 +4,17 @@ import { projects, testimonials } from "@/utils/data";
 export const navLinks: NavLinkProps[] = [
 	{
 		href: "#hero",
-		label: "Home",
+		labelKey: "Home",
 	},
 	{
 		href: "#services",
-		label: "Services",
+		labelKey: "Services",
 	},
 	...(projects.length > 0
 		? [
 				{
 					href: "#projects",
-					label: "Projects",
+					labelKey: "Projects",
 				},
 		  ]
 		: []),
@@ -22,17 +22,17 @@ export const navLinks: NavLinkProps[] = [
 		? [
 				{
 					href: "#testimonials",
-					label: "Testimonials",
+					labelKey: "Testimonials",
 				},
 		  ]
 		: []),
 	{
 		href: "/#process",
-		label: "Process",
+		labelKey: "Process",
 	},
 	{
 		href: "#contact",
-		label: "Contact",
+		labelKey: "Contact",
 		filled: true,
 	},
 ];

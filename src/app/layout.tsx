@@ -4,6 +4,8 @@ import "./globals.css";
 import { cn } from "@/utils/cn";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { getLocale, getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 
 const SpaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -12,13 +14,16 @@ export const metadata: Metadata = {
 	description: "Custom Websites Crafted Just for You",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	const locale = await getLocale();
+	const messages = await getMessages();
+
 	return (
-		<html lang="en" className="scroll-smooth scroll-pt-32">
+		<html lang={locale} className="scroll-smooth scroll-pt-32">
 			<head>
 				<link
 					rel="apple-touch-icon"
@@ -46,9 +51,11 @@ export default function RootLayout({
 					"bg-dark text-light min-h-screen",
 				)}
 			>
-				<Navbar />
-				<div className="mt-32 px-10 md:px-[80px]">{children}</div>
-				<Footer />
+				<NextIntlClientProvider messages={messages}>
+					<Navbar />
+					<div className="mt-32 px-10 md:px-[80px]">{children}</div>
+					<Footer />
+				</NextIntlClientProvider>
 			</body>
 		</html>
 	);

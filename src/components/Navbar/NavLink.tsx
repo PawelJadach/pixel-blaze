@@ -1,22 +1,25 @@
-"use client";
 import Link from "next/link";
 import React from "react";
 import { cn } from "@/utils/cn";
 import { rounded } from "@/settings/theme";
+import { useTranslations } from "next-intl";
 
 export type NavLinkProps = {
 	href: string;
-	label: string;
+	labelKey: string;
 	filled?: boolean;
 	mobile?: boolean;
 };
 
 export default function NavLink({
 	href,
-	label,
+	labelKey,
 	filled = false,
 	mobile = false,
 }: NavLinkProps) {
+	const t = useTranslations("Navbar");
+	const label = t(labelKey);
+
 	return (
 		<Link href={href}>
 			<span

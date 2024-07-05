@@ -6,8 +6,10 @@ import { FormData } from "@/types/types";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useTranslations } from "next-intl";
 
 const Form = () => {
+	const t = useTranslations("Contact.Form");
 	const [status, setStatus] = useState<"SUCCESS" | "ERROR" | null>(null);
 	const {
 		register,
@@ -36,14 +38,14 @@ const Form = () => {
 					<div className="w-full flex flex-col md:flex-row justify-between gap-6">
 						<FormField
 							type="text"
-							placeholder="Name"
+							placeholder={t("Name")}
 							name="name"
 							register={register}
 							error={errors.name}
 						/>
 						<FormField
 							type="email"
-							placeholder="Email"
+							placeholder={t("Email")}
 							name="email"
 							register={register}
 							error={errors.email}
@@ -52,21 +54,19 @@ const Form = () => {
 					<TextareaField
 						error={errors.message}
 						name="message"
-						placeholder="Message"
+						placeholder={t("Message")}
 						register={register}
 					/>
 					<button
 						className="w-full"
 						disabled={isSubmitting || status === "ERROR"}
 					>
-						submit
+						{t("Button")}
 					</button>
 				</>
 			)}
 			{status === "ERROR" && (
-				<p className="text-xl text-red-400">
-					Something went wrong... Try again later
-				</p>
+				<p className="text-xl text-red-400">{t("Error")}</p>
 			)}
 			{status === "SUCCESS" && (
 				<p className="text-5xl text-primary m-auto font-bold flex flex-col justify-center items-center">
@@ -82,7 +82,7 @@ const Form = () => {
 							clip-rule="evenodd"
 						/>
 					</svg>
-					<span>Message sent!</span>
+					<span>{t("Success")}</span>
 				</p>
 			)}
 		</form>
