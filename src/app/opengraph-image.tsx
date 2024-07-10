@@ -12,7 +12,18 @@ export const contentType = "image/png";
 export default async function Image() {
 	return new ImageResponse(
 		(
-			<div className="text-6xl text-light font-bold tracking-widest rounded-lg bg-black">
+			<div
+				style={{
+					fontSize: 128,
+					background: "black",
+					width: "100%",
+					height: "100%",
+					display: "flex",
+					alignItems: "center",
+					justifyContent: "center",
+					color: "#fff",
+				}}
+			>
 				Pixel Blaze
 			</div>
 		),
