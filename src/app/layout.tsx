@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { getLocale, getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { Analytics } from "@vercel/analytics/react";
+import PageScroll from "@/components/PageScroll";
 
 const SpaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -53,6 +54,7 @@ export default async function RootLayout({
 				)}
 			>
 				<NextIntlClientProvider messages={messages}>
+					<PageScroll />
 					<Navbar />
 					<div className="mt-32 px-10 md:px-[80px]">{children}</div>
 					<Footer />
