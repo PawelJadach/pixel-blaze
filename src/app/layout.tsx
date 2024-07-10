@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import { getLocale, getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { Analytics } from "@vercel/analytics/react";
-import PageScroll from "@/components/PageScroll";
+import PageScroll from "@/components/animations/PageScroll";
 
 const SpaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 

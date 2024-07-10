@@ -31,7 +31,7 @@ const Form = () => {
 	return (
 		<form
 			onSubmit={handleSubmit(onSubmit)}
-			className="flex flex-col gap-6 w-full max-w-[650px]"
+			className="flex flex-col gap-6 w-full"
 		>
 			{status !== "SUCCESS" && (
 				<>
