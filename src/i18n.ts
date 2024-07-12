@@ -4,7 +4,7 @@ import { getUserLocale } from "./utils/locale";
 export type Locale = (typeof locales)[number];
 
 export const locales = ["en", "pl"] as const;
-export const defaultLocale: Locale = "en";
+export const defaultLocale: Locale = "pl";
 
 export default getRequestConfig(async () => {
 	const locale = await getUserLocale();
