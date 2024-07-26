@@ -14,6 +14,10 @@ const SpaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 export const metadata: Metadata = {
 	title: "Pixel Blaze",
 	description: "Custom Websites Crafted Just for You",
+	metadataBase: new URL("https://pixel-blaze.com/"),
+	openGraph: {
+		images: "/opengraph-image.png",
+	},
 };
 
 export default async function RootLayout({

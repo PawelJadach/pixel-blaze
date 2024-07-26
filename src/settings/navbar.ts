@@ -33,6 +33,5 @@ export const navLinks: NavLinkProps[] = [
 	{
 		href: "#contact",
 		labelKey: "Contact",
-		filled: true,
 	},
 ];

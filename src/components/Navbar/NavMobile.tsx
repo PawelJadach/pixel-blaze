@@ -8,6 +8,7 @@ import NavLogo from "./NavLogo";
 import { navLinks } from "@/settings/navbar";
 import NavLink from "./NavLink";
 import LocaleSwitcher from "../ui/LocaleSwitcher";
+import Calendly from "@/libs/Calendly";
 
 export const NavMobile = () => {
 	const [isOpen, setOpen] = useState(false);
@@ -59,6 +60,18 @@ export const NavMobile = () => {
 									</motion.li>
 								);
 							})}
+							<motion.li
+								initial={{ scale: 0, opacity: 0 }}
+								animate={{ scale: 1, opacity: 1 }}
+								transition={{
+									type: "spring",
+									stiffness: 260,
+									damping: 20,
+									delay: 0.1 + navLinks.length / 10,
+								}}
+							>
+								<Calendly />
+							</motion.li>
 							<motion.li
 								initial={{ scale: 0, opacity: 0 }}
 								animate={{ scale: 1, opacity: 1 }}

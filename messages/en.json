@@ -64,5 +64,8 @@
       "Header": "Branding",
       "Text": "Building a distinctive and memorable brand identity that sets you apart from the competition."
     }
+  },
+  "Calendly": {
+    "button": "Schedule a meeting"
   }
 }

@@ -3,6 +3,7 @@ import NavLink from "./NavLink";
 import NavLogo from "./NavLogo";
 import { navLinks } from "@/settings/navbar";
 import LocaleSwitcher from "../ui/LocaleSwitcher";
+import Calendly from "@/libs/Calendly";
 
 export default function NavDesktop() {
 	return (
@@ -13,6 +14,7 @@ export default function NavDesktop() {
 					{navLinks.map((link) => (
 						<NavLink key={link.labelKey} {...link} />
 					))}
+					<Calendly />
 					<LocaleSwitcher />
 				</div>
 			</div>
