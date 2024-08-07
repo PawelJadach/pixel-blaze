@@ -4,10 +4,24 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import SlideIn from "../animations/SlideIn";
+import { global } from "@/settings/global";
+import { Locale } from "@/i18n";
 
 const Hero = () => {
 	const t = useTranslations("Hero");
 	const locale = useLocale();
+
+	const getOfferLink = (locale: Locale) => {
+		if (locale === "pl") {
+			return global.offerLink.pl;
+		}
+
+		if (locale === "en") {
+			return global.offerLink.en;
+		}
+
+		return global.offerLink.en;
+	};
 
 	return (
 		<div
@@ -33,7 +47,7 @@ const Hero = () => {
 					<p>{t("Text")}</p>
 				</SlideIn>
 				<SlideIn delay={0.6}>
-					<Link href="#contact">
+					<Link href={getOfferLink(locale as Locale)} target="_blank">
 						<button>{t("Button")}</button>
 					</Link>
 				</SlideIn>
