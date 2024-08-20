@@ -15,8 +15,10 @@ const Projects = () => {
 				<h1>{t("Header")}</h1>
 			</SlideIn>
 			<div className="flex items-center justify-center flex-col md:flex-row gap-8 flex-wrap mt-20	">
-				{projects.map((project) => (
-					<Project key={project.src} {...project} />
+				{projects.map((project, index) => (
+					<SlideIn key={project.src} delay={0.2 * index}>
+						<Project {...project} />
+					</SlideIn>
 				))}
 			</div>
 		</div>
