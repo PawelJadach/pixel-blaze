@@ -67,5 +67,8 @@
   },
   "Calendly": {
     "button": "Schedule a meeting"
+  },
+  "Projects": {
+    "Header": "Our projects"
   }
 }

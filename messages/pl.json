@@ -67,5 +67,8 @@
   },
   "Calendly": {
     "button": "Umów spotkanie"
+  },
+  "Projects": {
+    "Header": "Nasze projekty"
   }
 }
