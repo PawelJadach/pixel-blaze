@@ -9,13 +9,13 @@ const Project = ({ src, alt, href }: ProjectProps) => {
 	return (
 		<Link
 			href={href}
-			className="cursor-pointer relative group"
+			className="cursor-pointer relative group w-full h-full block rounded-xl overflow-hidden"
 			target="_blank"
 		>
 			<Image
 				src={src}
-				width={400}
-				height={400}
+				fill
+				objectFit="cover"
 				alt={alt}
 				className="md:saturate-0 group-hover:saturate-100 group-hover:scale-105 transition-all"
 			/>

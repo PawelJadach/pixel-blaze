@@ -25,5 +25,30 @@ export const projects: Project[] = [
 		href: "https://startup-computer.vercel.app/",
 		src: "/projects/startup-computer.png",
 	},
+	{
+		alt: "More Water Pls",
+		href: "https://www.more-water-pls.cc/",
+		src: "/projects/more-water-pls.png",
+	},
+	{
+		alt: "Osada Malina",
+		href: "https://raspberry-page.vercel.app/",
+		src: "/projects/osada-malina.png",
+	},
+	{
+		alt: "TotalCars",
+		href: "https://total-cars.vercel.app/",
+		src: "/projects/total-cars.png",
+	},
+	{
+		alt: "Use Tools",
+		href: "https://www.use-tools.cc/",
+		src: "/projects/use-tools.png",
+	},
+	{
+		alt: "ahat.pl",
+		href: "https://ahat-pl.vercel.app/",
+		src: "/projects/ahat-pl.png",
+	},
 ];
 export const testimonials: Testimonial[] = [];
