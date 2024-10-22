@@ -6,7 +6,7 @@ export type Project = {
 	href: string;
 	slug?: string;
 	title?: string;
-	description?: React.ReactElement;
+	description?: () => JSX.Element;
 	industry?: string;
 };
 
@@ -22,7 +22,7 @@ export const projects: Project[] = [
 		src: "/projects/home-trust.png",
 		slug: "home-trust",
 		title: "Projekt i wykonanie strony dla HomeTust",
-		description: <HomeTrustDescription />,
+		description: HomeTrustDescription,
 	},
 	{
 		alt: "MrDetailer",
