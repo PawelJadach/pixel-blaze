@@ -11,6 +11,11 @@ export type Testimonial = {
 
 export const projects: Project[] = [
 	{
+		alt: "Kominki LUX",
+		href: "https://kominki-lux.vercel.app/",
+		src: "/projects/kominki-lux.png",
+	},
+	{
 		alt: "HomeTrust",
 		href: "https://home-trust.vercel.app/",
 		src: "/projects/home-trust.png",
